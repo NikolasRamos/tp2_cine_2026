@@ -5,24 +5,24 @@
   --surface-gray: #141414;
   --text-main: #ffffff;
   --text-muted: #b3b3b3;
-  --base-unit: 4px; /* Regla de los 4px  */
+  --base-unit: 4px; 
 }
 
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; /* Crucial para evitar bordes blancos por desborde */
+  box-sizing: border-box; 
   outline: none;
 }
 
 body {
-  background-color: var(--bg-dark); /*  */
+  background-color: var(--bg-dark); 
   color: var(--text-main);
   font-family: 'Arial', sans-serif;
   overflow-x: hidden;
 }
 
-/* 2. Layout Principal con Grid  */
+
 .registro {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -30,42 +30,42 @@ body {
   width: 100%;
 }
 
-/* Lado Izquierdo: Branding */
+
 .registro-left {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: calc(var(--base-unit) * 8); /* 32px  */
+  padding: calc(var(--base-unit) * 8); 
   background-color: #000;
 }
 
 .marca {
   color: var(--primary-red);
-  font-size: calc(var(--base-unit) * 12); /* 48px */
+  font-size: calc(var(--base-unit) * 12); 
   margin-bottom: calc(var(--base-unit) * 6);
   font-weight: bold;
 }
 
 .contenedor-logo {
-  width: calc(var(--base-unit) * 70); /* 280px */
+  width: calc(var(--base-unit) * 70); 
   height: calc(var(--base-unit) * 70);
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 0 50px rgba(229, 9, 20, 0.4); /* [cite: 83] */
+  box-shadow: 0 0 50px rgba(229, 9, 20, 0.4); 
   background: radial-gradient(circle, #222 0%, #000 70%);
 }
 
 .logo {
-  width: 70%; /* Ajustado para que respire dentro del círculo */
+  width: 70%; 
   height: auto;
-  filter: invert(1); /* Mantiene tu efecto de color inverso */
-  mix-blend-mode: screen; /* Elimina visualmente los residuos oscuros del fondo de la imagen */
+  filter: invert(1);
+  mix-blend-mode: screen; 
   display: block;
 }
-/* Lado Derecho: Formulario */
+
 .registro-right {
   display: flex;
   justify-content: center;
@@ -75,7 +75,7 @@ body {
 
 .form-wrapper {
   background-color: var(--surface-gray);
-  padding: calc(var(--base-unit) * 10); /* 40px */
+  padding: calc(var(--base-unit) * 10); 
   border-radius: calc(var(--base-unit) * 2);
   width: 100%;
   max-width: 450px;
@@ -87,7 +87,7 @@ body {
   margin-bottom: calc(var(--base-unit) * 6);
 }
 
-/* 3. Inputs y Etiquetas */
+
 .form-group {
   margin-bottom: calc(var(--base-unit) * 4);
   display: flex;
@@ -105,19 +105,19 @@ body {
   background: #2a2a2a;
   border: none;
   border-bottom: 2px solid #555;
-  padding: calc(var(--base-unit) * 2.5); /* 10px */
+  padding: calc(var(--base-unit) * 2.5); 
   color: var(--text-main);
   border-radius: 4px;
   transition: border-color 0.3s;
 }
 
-/* Pseudoclase :focus  */
+
 .form-group input:focus,
 .form-group select:focus {
   border-bottom-color: var(--primary-red);
 }
 
-/* 4. Sección Extra (Blanco Puro) */
+
 .extra-header h3, 
 .extra-header p {
   color: #FFFFFF !important;
@@ -129,7 +129,7 @@ body {
   opacity: 0.9;
 }
 
-/* 5. Radio Buttons (Snacks) */
+
 .radio-group {
   display: flex;
   flex-direction: column;
@@ -145,10 +145,10 @@ body {
   color: var(--text-main);
 }
 
-/* 6. Botón Registrarse */
+
 .btn-primary {
   width: 100%;
-  padding: calc(var(--base-unit) * 3); /* 12px */
+  padding: calc(var(--base-unit) * 3); 
   background-color: var(--primary-red);
   color: white;
   border: none;
@@ -156,16 +156,16 @@ body {
   font-weight: bold;
   margin-top: calc(var(--base-unit) * 4);
   cursor: pointer;
-  transition: transform 0.2s, background-color 0.2s; /* Interactividad  */
+  transition: transform 0.2s, background-color 0.2s; 
 }
 
-/* Pseudoclase :hover  */
+
 .btn-primary:hover {
   background-color: #ff1e1e;
   transform: scale(1.02);
 }
 
-/* 7. Responsive  */
+
 @media (max-width: 768px) {
   .registro {
     grid-template-columns: 1fr;

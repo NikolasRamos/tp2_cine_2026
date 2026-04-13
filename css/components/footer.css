@@ -5,6 +5,7 @@ footer {
     padding: 36px;
     border-top: 2px solid #282828;
     display: flex;
+    justify-content: center;
 }
 
 footer p{

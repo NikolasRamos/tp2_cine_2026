@@ -11,18 +11,18 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; /* Crucial para evitar bordes blancos por desborde */
+  box-sizing: border-box; 
   outline: none;
 }
 
 body {
-  background-color: var(--bg-dark); /*  */
+  background-color: var(--bg-dark); 
   color: var(--text-main);
   font-family: 'Arial', sans-serif;
   overflow-x: hidden;
 }
 
-/* 2. Layout Principal con Grid  */
+
 .registro {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -30,39 +30,39 @@ body {
   width: 100%;
 }
 
-/* Lado Izquierdo: Branding */
+
 .registro-left {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: calc(var(--base-unit) * 8); /* 32px  */
+  padding: calc(var(--base-unit) * 8); 
   background-color: #000;
 }
 
 .marca {
   color: var(--primary-red);
-  font-size: calc(var(--base-unit) * 12); /* 48px */
+  font-size: calc(var(--base-unit) * 12); 
   margin-bottom: calc(var(--base-unit) * 6);
   font-weight: bold;
 }
 
 .contenedor-logo {
-  width: calc(var(--base-unit) * 70); /* 280px */
+  width: calc(var(--base-unit) * 70); 
   height: calc(var(--base-unit) * 70);
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 0 50px rgba(229, 9, 20, 0.4); /* [cite: 83] */
+  box-shadow: 0 0 50px rgba(229, 9, 20, 0.4); 
   background: radial-gradient(circle, #222 0%, #000 70%);
 }
 
 .logo {
-  width: 70%; /* Ajustado para que respire dentro del círculo */
+  width: 70%; 
   height: auto;
-  filter: invert(1); /* Mantiene tu efecto de color inverso */
-  mix-blend-mode: screen; /* Elimina visualmente los residuos oscuros del fondo de la imagen */
+  filter: invert(1); 
+  mix-blend-mode: screen; 
   display: block;
 }
 /* Lado Derecho: Formulario */

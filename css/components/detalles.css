@@ -1,8 +1,13 @@
 @import url(./components/style.css);
 @import url(./components/footer.css);
+@import url(./components/poster.css); /* solo tiene modificado las dimensiones de las img */
+@import url(./components/detalles.css); 
+@import url(./components/nav.css);
 
-
-
+header{
+    background-color: var(--color-superficie);
+    color: var(--color-texto-suave);
+}
 
 .container-detalle {
   gap: 4px;

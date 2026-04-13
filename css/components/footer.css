@@ -1,0 +1,13 @@
+@import url(./components/style.css);
+
+footer {
+    background-color: #1A1A1A;
+    padding: 36px;
+    border-top: 2px solid #282828;
+    display: flex;
+    justify-content: center;
+}
+
+footer p{
+    color: var(--color-texto);
+}

@@ -1,3 +1,10 @@
+@import url(./components/poster.css); /* solo tiene modificado las dimensiones de las img */
+@import url(./components/detalles.css); 
+@import url(./components/nav.css);
+
+
+/* Paletas de colores que pueden usar: */
+
 /* Paleta 1: */
 /*:root {
   --color-fondo: #0f172a;

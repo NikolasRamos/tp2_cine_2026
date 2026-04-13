@@ -1,0 +1,161 @@
+@import url(./components/footer.css);
+@import url(./style.css);
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+main {
+    display: flex;
+    min-height: 100vh;
+}
+
+.panel-bienvenida, .login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.panel-bienvenida {
+    gap: 40px;
+    width: 45%;
+    padding-bottom: 176px;
+    background-color: var(--color-fondo);
+}
+
+.titulo {
+    color: var(--color-primario);
+}
+
+.contenedor-logo {
+    box-shadow: 1px 0 24px var(--color-primario);
+    border-radius: 50%;
+}
+
+.logo {
+    opacity: .6;
+    height: auto;
+    max-width: 240px;
+    border-radius: 50%;
+    filter: invert(1);
+}
+
+form {
+    gap: 40px;
+    width: 55%;
+    background-color: var(--color-superficie);
+    box-shadow: 1px 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    color:var(--color-texto);
+    padding-bottom: 60px;
+    font-size: 32px;
+}
+
+label {
+    display: flex;
+    padding-bottom: 20px;
+    color: var(--color-texto-suave);
+    font-size: 20px;
+}
+
+input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 3px solid var(--color-fondo);
+
+    padding-right: 340px;
+    padding-bottom: 4px;
+    padding-top: 12px;
+
+    font-size: 16px;
+    color: var(--color-texto-suave);
+}
+
+input:focus {
+    outline: none;
+}
+
+button {
+    border-radius: 12px;
+    border: 0;
+    box-shadow: 1px 0 10px rgba(0, 0, 0, 0.5);
+
+    background-color: var(--color-primario);
+    color: var(--color-texto);
+    padding: 20px 124px;
+    font-size: 16px;
+}
+
+button:hover{
+    background-color: var(--color-fondo);
+    color: var(--color-texto-suave);
+}
+
+p {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    color: var(--color-texto);
+}
+
+a {
+    text-decoration: none;
+    color: var(--color-texto-suave);
+}
+
+a:hover {
+    color: var(--color-secundario);
+}
+
+/* --- MEDIA QUERY PARA MÓVILES --- */
+@media (max-width: 768px) {
+    
+    main {
+        flex-direction: column;
+        min-height: auto;
+    }
+
+    .panel-bienvenida, form {
+        width: 100%;
+        padding: 40px 20px;
+    }
+
+    .panel-bienvenida {
+        padding-bottom: 40px;
+        gap: 20px;
+    }
+
+    .logo {
+        max-width: 160px;
+    }
+
+    form {
+        padding-bottom: 60px;
+    }
+
+    h2 {
+        font-size: 24px;
+        padding-bottom: 30px;
+        text-align: center;
+    }
+
+    input {
+        padding-right: 0;
+        width: 100%;
+        display: block;
+    }
+
+    button {
+        padding: 20px 124px;
+    }
+
+    footer {
+        text-align: center;
+        padding: 20px;
+    }
+}

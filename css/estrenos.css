@@ -12,50 +12,6 @@ body {
 
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background: #222;
-  color: white;
-  padding: 1rem;
-}
-
-header div:first-child {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-header h1 {
-  margin: 0;
-}
-header img {
-  height: 40px;
-}
-
-.logo-titulo {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  background-color: #222;
-  padding: 0.5rem 1rem;
-  color: red;
-}
-
-.logo-titulo h1 {
-  margin: 0;
-  font-size: 2rem;
-}
-
-.logo-titulo img {
-  height: 60px;
-  margin: 0;
-  width: auto;
-  border-radius: 50%;          
-  box-shadow: 0 0 15px red;  
-}
-
 .estrenos {
   
   grid-template-columns: repeat(3, 1fr);
@@ -69,7 +25,6 @@ header img {
   align-items: center;
   width: 100%;
 }
-
 
 .estrenos-titulo {
   color: white;
@@ -91,7 +46,6 @@ header img {
   align-content: center;
   
 }
-
 
 .card {
   background: #222;

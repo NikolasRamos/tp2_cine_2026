@@ -7,13 +7,14 @@
     <meta name="description" content="Cine Aurora - Tu destino para disfrutar del mejor cine en la ciudad. Descubre las últimas películas, compra tus entradas y vive la experiencia cinematográfica al máximo." />
     <link rel="icon" href="./assets/favicon/logo-cine.png" />
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/components/index.css" />
   </head>
 
   <body>
     <header>
-      <div>
-        <h1>Cine Aurora</h1>
+      <div class="logo-titulo">
         <img src="./assets/favicon/logo-cine.png" alt="logo-cine-aurora" />
+        <h1>Cine Aurora</h1>
       </div>
       <div>
         <nav>
@@ -25,92 +26,87 @@
     </header>
 
     <main>
-      <section>
-        <h2>Películas en cartelera</h2>
+      <section class="peliculas">
+        <h1 class="peliculas-titulo">Películas en cartelera</h1>
 
-        <div>
-          <div>
-            <img src="./assets/img/poster-1.png" alt="" />
-            <h3>Nombre película</h3>
-            <p>Género</p>
-            <a href="./pages/detalle.html">Ver más</a>
+        <div class="cards-container">
+          <div class="card">
+            
+            <img src="./assets/img/Jurassic.webp" alt="" />
+            <h3>Jurassic Park</h3>
+            <p>Ciencia Ficción</p>
+            <a href="./pages/detalle.html" class="button">Ver más</a>
             <a
             href="#"
             onclick="
               alert('Lo sentimos, en este momento no funciona nuestro sistema')
-            "
-            >Comprar entradas</a
-          >
+            " class="button"
+            >Comprar entradas</a>
           </div>
 
-          <div>
-            <img src="./assets/img/poster-1.png" alt="" />
-            <h3>Nombre película</h3>
-            <p>Género</p>
-            <a href="./pages/detalle.html">Ver más</a>
+          <div class="card">
+            <img src="./assets/img/Scream.webp" alt="" />
+            <h3>Scream</h3>
+            <p>Terror</p>
+            <a href="./pages/detalle.html" class="button">Ver más</a>
             <a
             href="#"
             onclick="
               alert('Lo sentimos, en este momento no funciona nuestro sistema')
-            "
-            >Comprar entradas</a
-          >
-          </div>ref="pages/pelicula.html">Ver más</a>
-
-          <div>
-            <img src="./assets/img/poster-1.png" alt="" />
-            <h3>Nombre película</h3>
-            <p>Género</p>
-            <a href="./pages/detalle.html">Ver más</a>
-            <a
-            href="#"
-            onclick="
-              alert('Lo sentimos, en este momento no funciona nuestro sistema')
-            "
-            >Comprar entradas</a
-          >
+            " class="button"
+            >Comprar entradas</a>
           </div>
 
-          <div>
-            <img src="./assets/img/poster-1.png" alt="" />
-            <h3>Nombre película</h3>
-            <p>Género</p>
-            <a href="./pages/detalle.html">Ver más</a>
+          <div class="card">
+            <img src="./assets/img/Indiana-Jones.jpg" alt="" />
+            <h3>Indiana Jones y el Templo de la Perdición</h3>
+            <p>Aventura</p>
+            <a href="./pages/detalle.html" class="button">Ver más</a>
             <a
             href="#"
-            onclick="
+            onclick=" 
               alert('Lo sentimos, en este momento no funciona nuestro sistema')
-            "
-            >Comprar entradas</a
-          >
+            " class="button"
+            >Comprar entradas</a>
           </div>
 
-          <div>
-            <img src="./assets/img/poster-1.png" alt="" />
-            <h3>Nombre película</h3>
-            <p>Género</p>
-            <a href="./pages/detalle.html">Ver más</a>
+          <div class="card">
+            <img src="./assets/img/Nosferatu.jpg" alt="" />
+            <h3>Nosferatu</h3>
+            <p>Terror</p>
+            <a href="./pages/detalle.html" class="button">Ver más</a>
             <a
             href="#"
             onclick="
               alert('Lo sentimos, en este momento no funciona nuestro sistema')
-            "
-            >Comprar entradas</a
-          >
+            " class="button"
+            >Comprar entradas</a>
           </div>
 
-          <div>
-            <img src="./assets/img/poster-1.png" alt="" />
-            <h3>Nombre película</h3>
-            <p>Género</p>
-            <a href="./pages/detalle.html">Ver más</a>
+          <div class="card">
+            <img src="./assets/img/Morbius.jpg" alt="" />
+            <h3>Morbius</h3>
+            <p>Acción</p>
+            <a href="./pages/detalle.html" class="button">Ver más</a>
             <a
             href="#"
             onclick="
               alert('Lo sentimos, en este momento no funciona nuestro sistema')
-            "
-            >Comprar entradas</a
-          >
+            " class="button"
+            >Comprar entradas</a>
+          </div>
+
+          <div class="card">
+            <img src="./assets/img/Gremlins.jpg" alt="" />
+            <h3>Gremlins</h3>
+            <p>Comedia</p>
+            <a href="./pages/detalle.html" class="button">Ver más</a>
+            <a
+            href="#"
+            onclick="
+              alert('Lo sentimos, en este momento no funciona nuestro sistema')
+            " class="button"
+            >Comprar entradas</a>
           </div>
         </div>
       </section>

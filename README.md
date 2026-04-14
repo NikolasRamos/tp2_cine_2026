@@ -1,6 +1,10 @@
 # Trabajo práctico N°2:
 
-- Flexbox
-- Grids
-- Media queries
-- Modularización CSS (import url(...))
+## 👨‍💻 Autores
+
+* **Nikolas Ramos**
+* **Ramiro Olea**
+* **Ivo Castiglia**
+* **Gino Marigioli**
+* **Federico Luengo**
+* **Andres Emiliano Rossi**

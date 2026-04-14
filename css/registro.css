@@ -1,0 +1,183 @@
+/* 1. Variables y Reset */
+:root {
+  --primary-red: #e50914;
+  --bg-dark: #000000;
+  --surface-gray: #141414;
+  --text-main: #ffffff;
+  --text-muted: #b3b3b3;
+  --base-unit: 4px; /* Regla de los 4px  */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+  outline: none;
+}
+
+body {
+  background-color: var(--bg-dark); 
+  color: var(--text-main);
+  font-family: 'Arial', sans-serif;
+  overflow-x: hidden;
+}
+
+
+.registro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100vh;
+  width: 100%;
+}
+
+
+.registro-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: calc(var(--base-unit) * 8); 
+  background-color: #000;
+}
+
+.marca {
+  color: var(--primary-red);
+  font-size: calc(var(--base-unit) * 12); 
+  margin-bottom: calc(var(--base-unit) * 6);
+  font-weight: bold;
+}
+
+.contenedor-logo {
+  width: calc(var(--base-unit) * 70); 
+  height: calc(var(--base-unit) * 70);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 50px rgba(229, 9, 20, 0.4); 
+  background: radial-gradient(circle, #222 0%, #000 70%);
+}
+
+.logo {
+  width: 70%; 
+  height: auto;
+  filter: invert(1); 
+  mix-blend-mode: screen; 
+  display: block;
+}
+/* Lado Derecho: Formulario */
+.registro-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: calc(var(--base-unit) * 4);
+}
+
+.form-wrapper {
+  background-color: var(--surface-gray);
+  padding: calc(var(--base-unit) * 10); /* 40px */
+  border-radius: calc(var(--base-unit) * 2);
+  width: 100%;
+  max-width: 450px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.registro-form h2 {
+  color: var(--text-main);
+  margin-bottom: calc(var(--base-unit) * 6);
+}
+
+/* 3. Inputs y Etiquetas */
+.form-group {
+  margin-bottom: calc(var(--base-unit) * 4);
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  color: var(--text-main);
+  font-size: 14px;
+  margin-bottom: var(--base-unit);
+}
+
+.form-group input:not([type="radio"]), 
+.form-group select {
+  background: #2a2a2a;
+  border: none;
+  border-bottom: 2px solid #555;
+  padding: calc(var(--base-unit) * 2.5); /* 10px */
+  color: var(--text-main);
+  border-radius: 4px;
+  transition: border-color 0.3s;
+}
+
+/* Pseudoclase :focus  */
+.form-group input:focus,
+.form-group select:focus {
+  border-bottom-color: var(--primary-red);
+}
+
+/* 4. Sección Extra (Blanco Puro) */
+.extra-header h3, 
+.extra-header p {
+  color: #FFFFFF !important;
+  margin-bottom: calc(var(--base-unit) * 2);
+}
+
+.extra-header p {
+  font-size: 13px;
+  opacity: 0.9;
+}
+
+/* 5. Radio Buttons (Snacks) */
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--base-unit) * 2);
+  margin-top: var(--base-unit);
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  gap: calc(var(--base-unit) * 2);
+  cursor: pointer;
+  color: var(--text-main);
+}
+
+/* 6. Botón Registrarse */
+.btn-primary {
+  width: 100%;
+  padding: calc(var(--base-unit) * 3); /* 12px */
+  background-color: var(--primary-red);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  margin-top: calc(var(--base-unit) * 4);
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s; /* Interactividad  */
+}
+
+/* Pseudoclase :hover  */
+.btn-primary:hover {
+  background-color: #ff1e1e;
+  transform: scale(1.02);
+}
+
+/* 7. Responsive  */
+@media (max-width: 768px) {
+  .registro {
+    grid-template-columns: 1fr;
+  }
+  .registro-left {
+    padding: calc(var(--base-unit) * 10) calc(var(--base-unit) * 4);
+  }
+  .marca {
+    font-size: 32px;
+  }
+  .contenedor-logo {
+    width: 200px;
+    height: 200px;
+  }
+}

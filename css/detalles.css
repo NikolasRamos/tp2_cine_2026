@@ -1,0 +1,79 @@
+@import url(./components/footer.css);
+@import url(./components/poster.css); /* solo tiene modificado las dimensiones de las img */
+@import url(./components/nav.css);
+@import url(./style.css);
+
+body {
+  background-color: var(--color-primario);
+  display: flex;
+  flex-direction: column;
+}
+
+.container-detalle {
+  gap: 4px;
+
+  display: grid;
+  grid-auto-columns: auto;
+  grid-auto-rows: auto;
+  
+  grid-template-areas: 
+    "box-1 box-1 box-1 box-1"
+    "box-2 box-2 box-2 box-2"
+    "box-3 box-4 box-5 box-6"
+    "box-7 box-7 box-8 box-8";
+}
+
+.box-detalles {
+  background-color: var(--color-fondo);
+  color: var(--color-texto-suave);
+  border-radius: 10px;
+  box-shadow: 1px 1px 2px var(--color-superficie);
+  display: grid;
+  
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.boton-de-compra {
+  width: 100px;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  margin: 0 auto;
+  padding: 10px 20px;
+  background-color: var(--color-fondo);
+  color: var(--color-texto-suave);
+  text-decoration: none;
+  border-radius: 50px;
+  box-shadow: 1px 1px 4px var(--color-superficie);
+  font-weight: bold;
+}
+
+a.boton-de-compra:active {
+  background-color: var(--color-texto-suave);
+  color: var(--color-fondo);
+}
+
+.imagen {
+    height: 100%;
+    width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    .container-detalle{
+        grid-template-areas: 
+    "box-1 box-1 box-1 box-1"
+    "box-2 box-2 box-3 box-4"
+    "box-2 box-2 box-5 box-6"
+    "box-2 box-2 box-7 box-8";
+    }
+    .imagen {
+    height: 400px;
+    width: 240px;
+    display: block;
+    margin: 0 auto;
+  }
+}

@@ -6,83 +6,79 @@
     <title>Cine Aurora 📽️</title>
     <meta name="description" content="Cine Aurora - Detalle de la película." />
     <link rel="icon" href="../assets/favicon/logo-cine.png" />
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/detalles.css" />
   </head>
   <body>
+    
     <header>
-      <div>
+      <div class="t1">
         <h1>Cine Aurora</h1>
         <img src="../assets/favicon/logo-cine.png" alt="logo-cine-aurora" />
       </div>
-      <div>
+      <div class="referencias">
         <nav>
           <a href="../index.html">Inicio</a>
           <a href="../pages/estrenos.html">Próximos estrenos</a>
-          <a href="../pages/login.html">Mi perfil</a>
+          <a href="../index.html">Volver</a>
         </nav>
       </div>
     </header>
 
     <main>
       <section>
-        <div>
-          <img src="../assets/img/poster-1.png" alt="Póster" />
-        </div>
-        <div>
-          <div>
+        <div class="container-detalle">
+          <div class="box-detalles" style="grid-area: box-1">
             <h1>Título</h1>
+            <img src="../assets/img/poster-1.png" alt="Póster" class="imagen" />
             <h2>Lorem ipsum, dolor sit.</h2>
           </div>
-          <div>
+          <div class="box-detalles" style="grid-area: box-2">
             <h3>Sinopsis</h3>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio
-              ullam ipsum corporis quidem, assumenda magni officia recusandae.
-              Tenetur voluptatem architecto, dolores eius, deleniti quam
-              voluptatibus laboriosam ut recusandae animi quisquam!
+              Un ladrón especializado en robar secretos del subconsciente es contratado para realizar la tarea inversa: implantar una idea en la mente de un poderoso empresario. Para lograrlo, debe reunir a un equipo y adentrarse en un complejo mundo de sueños dentro de sueños, donde la línea entre la realidad y la imaginación se vuelve cada vez más difusa.
             </p>
           </div>
-          <div>
+          <div class="box-detalles" style="grid-area: box-3">
             <h3>Duración</h3>
             <p>155 minutos</p>
           </div>
 
-          <div>
+          <div class="box-detalles" style="grid-area: box-4">
             <h3>Género</h3>
             <p>Ciencia ficción</p>
           </div>
 
-          <div>
+          <div class="box-detalles" style="grid-area: box-5">
             <h3>Director</h3>
             <p>John Doe</p>
           </div>
 
-          <div>
+          <div class="box-detalles" style="grid-area: box-6">
             <h3>Clasificación</h3>
             <p>+13</p>
           </div>
-          <div>
+          <div class="box-detalles horarios" style="grid-area: box-7">
             <h3>Horarios:</h3>
             <p>16:00</p>
             <p>19:00</p>
             <p>22:00</p>
           </div>
-          <div>
+          <div class="box-detalles" style="grid-area: box-8">
             <p>Puntuación: ★★★★☆</p>
           </div>
-          <a
-            href="#"
-            onclick="
-              alert('Lo sentimos, en este momento no funciona nuestro sistema')
-            "
-            >Comprar entradas</a
-          >
+          
         </div>
+        <a
+          href="#"
+          onclick="
+            alert('Lo sentimos, en este momento no funciona nuestro sistema')"
+          class="boton-de-compra">Comprar entradas
+        </a>
       </section>
     </main>
-
     <footer>
       <p>&copy; 2026 Cine Aurora - Todos los derechos reservados</p>
     </footer>
+    
   </body>
 </html>

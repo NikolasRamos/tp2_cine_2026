@@ -1,114 +1,117 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cine Aurora 📽️ - Registro</title>
-    <meta name="description" content="Cine Aurora - Registro" />
-    <link rel="icon" href="../assets/favicon/logo-cine.png" />
-    <link rel="stylesheet" href="../css/style.css" />
-  </head>
 
-  <body>
-    <header>
-      <div>
-        <h1>Cine Aurora</h1>
-        <img src="../assets/favicon/logo-cine.png" alt="logo-cine-aurora" />
-      </div>
-      <div>
-        <nav>
-          <a href="../index.html">Inicio</a>
-          <a href="./estrenos.html">Próximos estrenos</a>
-          <a href="../index.html">Volver</a>
-        </nav>
-      </div>
-    </header>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registro - Cine Aurora</title>
 
-    <main>
-      <div>
-        <form action="login.html">
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/registro.css" /> 
+</head>
+
+<body>
+
+  <main class="registro">
+
+    <section class="registro-left">
+      <div class="left-content">
+        <h2 class="marca">Cine Aurora</h2>
+        <div class="contenedor-logo">
+          <img src="../assets/favicon/logo-cine.png" alt="logo-cine-aurora" class="logo" />
+        </div>
+      </div> </section>
+
+    <section class="registro-right">
+      <div class="form-wrapper">
+
+        <form action="login.html" class="registro-form">
           <h2>Crear nueva cuenta</h2>
-          <div>
-            <label>Nombre Completo</label>
-            <input type="text" required />
-          </div>
-          <div>
-            <label>Email</label>
-            <input type="email" required />
-          </div>
-          <div>
-            <label>Fecha de nacimiento</label>
-            <input type="date" required />
-          </div>
-          <div>
-            <label>Contraseña</label>
-            <input type="password" required />
+
+          <div class="form-group">
+            <label for="nombre">Nombre Completo</label>
+            <input type="text" id="nombre" required />
           </div>
 
-          <div>
-            <label>Confirmar contraseña</label>
-            <input type="password" required />
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" required />
+          </div>
+
+          <div class="form-group">
+            <label for="fecha">Fecha de nacimiento</label>
+            <input type="date" id="fecha" required />
+          </div>
+
+          <div class="form-group">
+            <label for="pass">Contraseña</label>
+            <input type="password" id="pass" required />
+          </div>
+
+          <div class="form-group">
+            <label for="confirm-pass">Confirmar contraseña</label>
+            <input type="password" id="confirm-pass" required />
           </div>
 
           <hr />
 
-          <div>
-            <div>
+          <div class="extra-data">
+            <div class="extra-header">
               <h3>Datos para ayudar al cine</h3>
               <p>Estos datos nos ayudan a mejorar tu experiencia.</p>
             </div>
-            <div>
-              <div>
-                <label>Elegí tu color favorito para las butacas</label>
-                <input type="color" />
-              </div>
 
-              <div>
-                <label
-                  >¿Cuántas entradas comprás en general? Min: 0 | Max: 10</label
-                >
-                <input type="range" min="0" max="10" />
-              </div>
+            <div class="form-group">
+              <label for="color-butaca">Color favorito para butacas</label>
+              <input type="color" id="color-butaca" />
+            </div>
 
-              <div>
-                <label>Seleccioná tu género favorito</label>
-                <select>
-                  <option>Acción</option>
-                  <option>Drama</option>
-                  <option>Ciencia ficción</option>
-                  <option>Terror</option>
-                  <option>Comedia</option>
-                  <option>Romance</option>
-                </select>
-              </div>
+            <div class="form-group">
+              <label for="range-entradas">
+                Entradas: <span id="valor-entradas">5</span>
+              </label>
+              <input type="range" min="0" max="10" value="5" id="range-entradas" />
+            </div>
 
-              <div>
-                <label>Elegí tu snack favorito</label>
+            <div class="form-group">
+              <label for="genero">Género favorito</label>
+              <select id="genero">
+                <option value="accion">Acción</option>
+                <option value="drama">Drama</option>
+                <option value="ciencia-ficcion">Ciencia ficción</option>
+                <option value="terror">Terror</option>
+                <option value="comedia">Comedia</option>
+                <option value="romance">Romance</option>
+              </select>
+            </div>
 
-                <input type="radio" name="snack" />
-                <label>Pochoclo dulce</label>
-
-                <input type="radio" name="snack" />
-                <label>Pochoclo salado</label>
-
-                <input type="radio" name="snack" />
-                <label>Chocolate</label>
-
-                <input type="radio" name="snack" />
-                <label>Frutos secos</label>
+            <div class="form-group">
+              <label>Snack favorito</label>
+              <div class="radio-group">
+                <label><input type="radio" name="snack" value="dulce" /> Pochoclo dulce</label>
+                <label><input type="radio" name="snack" value="salado" /> Pochoclo salado</label>
+                <label><input type="radio" name="snack" value="chocolate" /> Chocolate</label>
+                <label><input type="radio" name="snack" value="frutos-secos" /> Frutos secos</label>
               </div>
             </div>
           </div>
 
-          <div>
-            <button type="submit">Regístrate</button>
-          </div>
+          <button type="submit" class="btn-primary">Registrarse</button>
         </form>
-      </div>
 
-      <footer>
-        <p>&copy; 2026 Cine Aurora - Todos los derechos reservados</p>
-      </footer>
-    </main>
-  </body>
+      </div>
+    </section>
+
+  </main>
+
+  <script>
+    const range = document.getElementById("range-entradas");
+    const valor = document.getElementById("valor-entradas");
+
+    range.addEventListener("input", () => {
+      valor.textContent = range.value;
+    });
+  </script>
+
+</body>
 </html>
